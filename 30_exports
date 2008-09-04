@@ -1,0 +1,16 @@
+# -*- Mode: Shell-script; -*-
+
+# .zsh/exports : Mark Tran <mark@nirv.net>
+
+export BROWSER=opera
+export EDITOR=vim
+export EMAIL='Mark Tran <mark@nirv.net>'
+export HOST=$(hostname)
+export HOST=${HOST%%.*}
+export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
+export NNTPSERVER=news.csh.rit.edu
+export PAGER=less
+export UNAME=$(uname)
+
+[[ "$ORIGPATH" == "" ]] && export ORIGPATH=$PATH
+export PATH=$ORIGPATH:$HOME/bin

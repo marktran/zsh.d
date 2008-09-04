@@ -1,4 +1,6 @@
-# .zsh/initialization : Mark Tran <mark@nirv.net>
+# -*- Mode: Shell-script; -*-
+
+# .zsh/10_initialization : Mark Tran <mark@nirv.net>
 
 # ssh-agent
 SSH_ENV=$HOME/.ssh/environment
@@ -14,7 +16,7 @@ function start_agent {
 # machine/os-specific configuration
 function config_darwin {
     [[ "$ORIGPATH" == "" ]] && export ORIGPATH=$PATH
-    export PATH=$ORIGPATH:/opt/local/bin
+    export PATH=$ORIGPATH:$HOME/bin:/opt/local/bin
 
     [[ "$ORIGMANPATH" == "" ]] && export ORIGMANPATH=$MANPATH
     export MANPATH=$ORIGMANPATH:/opt/local/man
@@ -37,7 +39,7 @@ function config_lambda {
    fi
 
     [[ "$ORIGPATH" == "" ]] && export ORIGPATH=$PATH
-    export PATH=$ORIGPATH:/var/lib/gems/1.8/bin
+    export PATH=$ORIGPATH:/sbin:/usr/sbin:$HOME/bin:/var/lib/gems/1.8/bin
 }
 
 case $HOST in

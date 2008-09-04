@@ -1,0 +1,50 @@
+# .zsh/initialization : Mark Tran <mark@nirv.net>
+
+# ssh-agent
+SSH_ENV=$HOME/.ssh/environment
+
+function start_agent {
+   echo "Initializing new SSH Agent..."
+   /usr/bin/ssh-agent | sed 's/^echo/#echo/' > ${SSH_ENV}
+   chmod 600 ${SSH_ENV}
+   . ${SSH_ENV} > /dev/null
+   /usr/bin/ssh-add;
+}
+
+# machine/os-specific configuration
+function config_darwin {
+    [[ "$ORIGPATH" == "" ]] && export ORIGPATH=$PATH
+    export PATH=$ORIGPATH:/opt/local/bin
+
+    [[ "$ORIGMANPATH" == "" ]] && export ORIGMANPATH=$MANPATH
+    export MANPATH=$ORIGMANPATH:/opt/local/man
+
+    export TERM=rxvt
+}
+
+function config_freebsd {
+    export TERM=rxvt
+}
+
+function config_lambda {
+   if [ -f "${SSH_ENV}" ]; then
+      . ${SSH_ENV} > /dev/null
+      ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+         start_agent;
+      }
+   else
+      start_agent;
+   fi
+
+    [[ "$ORIGPATH" == "" ]] && export ORIGPATH=$PATH
+    export PATH=$ORIGPATH:/var/lib/gems/1.8/bin
+}
+
+case $HOST in
+    lambda) config_lambda ;;
+esac
+
+case $UNAME in
+    Darwin) config_darwin ;;
+    FreeBSD) config_freebsd ;;
+esac

@@ -1,0 +1,3 @@
+# .zsh/bindings : Mark Tran <mark@nirv.net>
+
+bindkey -e

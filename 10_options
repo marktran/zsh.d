@@ -1,0 +1,18 @@
+# .zsh/options : Mark Tran <mark@nirv.net>
+
+HISTSIZE=2000
+SAVEHIST=2000
+HISTFILE=$HOME/.zhistory
+
+setopt ALL_EXPORT
+setopt AUTO_CD
+setopt AUTO_PUSHD
+setopt BRACE_CCL
+setopt CORRECT
+setopt EXTENDED_HISTORY
+setopt EXTENDEDGLOB
+setopt NO_BEEP
+setopt NO_CLOBBER
+setopt NO_NOMATCH
+
+unset MAILCHECK

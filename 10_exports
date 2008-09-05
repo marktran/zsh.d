@@ -10,4 +10,5 @@ export HOST=${HOST%%.*}
 export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
 export NNTPSERVER=news.csh.rit.edu
 export PAGER=less
+export READNULLCMD=cat
 export UNAME=$(uname)

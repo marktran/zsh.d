@@ -9,6 +9,7 @@ alias irc='ssh -t monaco screen -D -R irssi'
 alias ls='ls -F'
 alias m=mplayer
 alias maketorrent='/usr/share/python-support/bittorrent/BitTorrent/btmakemetafile.py'
+alias rm='rm -i'
 alias sourcerc='. ~/.zshrc'
 
 alias -g A='| ack'

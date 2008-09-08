@@ -10,7 +10,7 @@ alias ls='ls -F'
 alias m=mplayer
 alias maketorrent='/usr/share/python-support/bittorrent/BitTorrent/btmakemetafile.py'
 alias rm='rm -i'
-alias sourcerc='. ~/.zshrc'
+alias sourcerc='. ~/.zsh/.zshrc'
 
 alias -g A='| ack'
 alias -g L='| less'

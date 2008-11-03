@@ -16,10 +16,10 @@ function start_agent {
 # machine/os-specific configuration
 function config_darwin {
     [[ "$ORIGPATH" == "" ]] && export ORIGPATH=$PATH
-    export PATH=$ORIGPATH:$HOME/bin:/opt/local/bin
+    export PATH=$ORIGPATH:$HOME/bin:/opt/local/bin:/opt/local/sbin
 
     [[ "$ORIGMANPATH" == "" ]] && export ORIGMANPATH=$MANPATH
-    export MANPATH=$ORIGMANPATH:/opt/local/man
+    export MANPATH=$ORIGMANPATH:/opt/local/share/man
 
     export TERM=rxvt
 }

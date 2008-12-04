@@ -10,5 +10,6 @@ export HOST=${HOST%%.*}
 export LESSOPEN="|lesspipe.sh %s"
 export NNTPSERVER=news.csh.rit.edu
 export PAGER=less
+export PYTHONSTARTUP=$HOME/.pythonrc
 export READNULLCMD=cat
 export UNAME=$(uname)

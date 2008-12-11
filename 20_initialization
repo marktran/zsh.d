@@ -21,6 +21,7 @@ function config_darwin {
     [[ "$ORIGMANPATH" == "" ]] && export ORIGMANPATH=$MANPATH
     export MANPATH=$ORIGMANPATH:/opt/local/share/man
 
+    export SBCL_HOME=/opt/local/lib/sbcl
     export TERM=rxvt
 }
 

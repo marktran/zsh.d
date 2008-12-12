@@ -12,4 +12,5 @@ export NNTPSERVER=news.csh.rit.edu
 export PAGER=less
 export PYTHONSTARTUP=$HOME/.pythonrc
 export READNULLCMD=cat
+export SBCL_HOME=/usr/local/lib/sbcl
 export UNAME=$(uname)

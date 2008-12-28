@@ -9,14 +9,18 @@ SAVEHIST=2000
 HISTFILE=$HOME/.zhistory
 
 setopt ALL_EXPORT
+setopt APPEND_HISTORY
 setopt AUTO_CD
 setopt AUTO_PUSHD
 setopt BRACE_CCL
-setopt CORRECT
 setopt EXTENDED_HISTORY
-setopt EXTENDEDGLOB
+setopt EXTENDED_GLOB
+setopt HIST_IGNORE_ALL_DUPS
+setopt NOMATCH
+setopt NOTIFY
+setopt RM_STAR_SILENT
+
 setopt NO_BEEP
 setopt NO_CLOBBER
-setopt NO_NOMATCH
 
 unset MAILCHECK

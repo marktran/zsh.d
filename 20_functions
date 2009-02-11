@@ -1,5 +1,4 @@
 # -*- Mode: Shell-script; -*-
-
 # .zsh/20_functions : Mark Tran <mark@nirv.net>
 
 # complete notation for repeated dots
@@ -11,3 +10,12 @@ rationalise-dot() {
     fi
 }
 zle -N rationalise-dot
+
+# force zsh to rehash
+_force_rehash() {
+  (( CURRENT == 1 )) && rehash
+  return 1
+}
+
+zstyle ':completion:*' completer \
+  _oldlist _expand _force_rehash _complete ...

@@ -1,13 +1,9 @@
 # -*- Mode: Shell-script; -*-
 
-# -*- Mode: Shell-script; -*-
-
-# -*- Mode: Shell-script; -*-
-
 # .zsh/completions : Mark Tran <mark@nirv.net>
 
-autoload -U compinit; compinit
-zmodload -i zsh/complist
+zmodload zsh/complist
+autoload -U compinit && compinit
 
 compctl -K screen-sessions screen
 compctl -g '*(-/D)' cd
@@ -21,7 +17,6 @@ compctl -g "* (-/D)" + -g "*.class(.:r)" java
 compctl -g '*.par2' + -g '*(-/)' par2
 compctl -g '*.pdf' + -g '*(-/)' evince acroread
 compctl -g '*.r01 *.part01.rar *.rar' + -g '*(-/)' unrar
-compctl -g '*.t2t' + -g '*(-/)' txt2tags
 compctl -g '*.zip' + -g '*(-/)' unzip
 compctl -g '*.mp3 *.ogg *.mod *.wav *.avi *.mpg *.mpeg *.wmv' + -g '*(-/)' mplayer
 
@@ -52,4 +47,3 @@ function screen-sessions {
 
    reply=($sessions)
 }
-

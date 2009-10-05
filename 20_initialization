@@ -22,7 +22,6 @@ function config_darwin {
     export MANPATH=$ORIGMANPATH:/opt/local/share/man
 
     export SBCL_HOME=/opt/local/lib/sbcl
-    export TERM=rxvt
 
     alias java6='/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Commands/java'
     alias javac6='/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Commands/javac'

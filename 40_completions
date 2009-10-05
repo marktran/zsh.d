@@ -15,7 +15,6 @@ compctl -v export
 compctl -o setopt unsetopt
 compctl -g "* (-/D)" + -g "*.class(.:r)" java
 compctl -g '*.par2' + -g '*(-/)' par2
-compctl -g '*.pdf' + -g '*(-/)' evince acroread
 compctl -g '*.r01 *.part01.rar *.rar' + -g '*(-/)' unrar
 compctl -g '*.zip' + -g '*(-/)' unzip
 compctl -g '*.mp3 *.ogg *.mod *.wav *.avi *.mpg *.mpeg *.wmv' + -g '*(-/)' mplayer

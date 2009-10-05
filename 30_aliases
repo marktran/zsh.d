@@ -6,7 +6,6 @@ alias ^L=clear
 alias ack="$(whence ack-grep || whence ack) --nocolor"
 alias e="emacsclient -c"
 alias gnus="emacsclient -c -e '(gnus)'"
-alias irc="ssh -t monaco screen -D -R irssi"
 alias ls="ls -F"
 alias m=mplayer
 alias maketorrent="/usr/share/python-support/bittorrent/BitTorrent/btmakemetafile.py"

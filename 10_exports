@@ -2,8 +2,6 @@
 
 # .zsh/10_exports : Mark Tran <mark@nirv.net>
 
-export BROWSER=opera
-export EDITOR=vim
 export EMAIL='Mark Tran <mark@nirv.net>'
 export HOST=$(hostname)
 export HOST=${HOST%%.*}

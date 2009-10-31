@@ -1,14 +1,11 @@
 # -*- Mode: Shell-script; -*-
-
 # .zsh/10_exports : Mark Tran <mark@nirv.net>
-
 export EMAIL='Mark Tran <mark@nirv.net>'
 export HOST=$(hostname)
 export HOST=${HOST%%.*}
 export LESSOPEN="|lesspipe.sh %s"
-export NNTPSERVER=news.csh.rit.edu
 export PAGER=less
+export PYTHONPATH=$HOME/lib/python
 export PYTHONSTARTUP=$HOME/.pythonrc
 export READNULLCMD=cat
-export SBCL_HOME=/usr/local/lib/sbcl
 export UNAME=$(uname)

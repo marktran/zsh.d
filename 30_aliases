@@ -1,8 +1,7 @@
 # -*- Mode: Shell-script; -*-
-
 # .zsh/30_aliases : Mark Tran <mark@nirv.net>
-
 alias ^L=clear
+alias .=pwd
 alias ack="$(whence ack-grep || whence ack) --nocolor"
 alias e="emacsclient -c"
 alias gnus="emacsclient -c -e '(gnus)'"
@@ -19,6 +18,12 @@ alias -g L="| less"
 alias -g X="| xargs -i"
 alias -g XR="| xargs -i unrar x {}"
 
+# ruby
+alias gem=gem1.9
+alias irb=irb1.9
+alias ruby=ruby1.9
+
+# radio streams
 alias bbc="mplayer -cache-min 4 -playlist \
 http://www.bbc.co.uk/worldservice/meta/tx/nb/live_news_au_nb.ram"
 alias mpr="mplayer -cache-min 4 \

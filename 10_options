@@ -1,5 +1,6 @@
 # -*- Mode: Shell-script; -*-
 # .zsh/10_options : Mark Tran <mark@nirv.net>
+
 umask 022
 
 HISTSIZE=2000
@@ -19,6 +20,5 @@ setopt NOTIFY
 setopt RM_STAR_SILENT
 
 setopt NO_BEEP
-setopt NO_CLOBBER
 
 unset MAILCHECK

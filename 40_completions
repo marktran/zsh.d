@@ -1,5 +1,6 @@
 # -*- Mode: Shell-script; -*-
 # .zsh/completions : Mark Tran <mark@nirv.net>
+
 zmodload zsh/complist
 autoload -U compinit && compinit
 

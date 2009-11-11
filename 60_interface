@@ -1,5 +1,6 @@
 # -*- Mode: Shell-script; -*-
 # .zsh/interface : Mark Tran <mark@nirv.net>
+
 # prompt
 PS1='%m(%35<...<%~) [%!] %(?..!%?! )%# '
 

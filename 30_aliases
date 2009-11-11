@@ -1,5 +1,6 @@
 # -*- Mode: Shell-script; -*-
 # .zsh/30_aliases : Mark Tran <mark@nirv.net>
+
 alias ^L=clear
 alias .=pwd
 alias ack="$(whence ack-grep || whence ack) --nocolor"
@@ -17,11 +18,6 @@ alias -g A="| ack"
 alias -g L="| less"
 alias -g X="| xargs -i"
 alias -g XR="| xargs -i unrar x {}"
-
-# ruby
-alias gem=gem1.9
-alias irb=irb1.9
-alias ruby=ruby1.9
 
 # radio streams
 alias bbc="mplayer -cache-min 4 -playlist \

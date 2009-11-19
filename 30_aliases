@@ -2,13 +2,9 @@
 # .zsh/30_aliases : Mark Tran <mark@nirv.net>
 
 alias ^L=clear
-alias .=pwd
 alias ack="$(whence ack-grep || whence ack) --nocolor"
-alias e="emacsclient -c"
-alias gnus="emacsclient -c -e '(gnus)'"
 alias ls="ls -F"
 alias m=mplayer
-alias maketorrent="/usr/share/python-support/bittorrent/BitTorrent/btmakemetafile.py"
 alias rm="rm -i"
 alias sourcerc=". ~/.zsh/.zshrc"
 alias startx="startx 2>&1|tee ~/var/log/startx.log"

@@ -11,7 +11,7 @@ rationalise-dot() {
 }
 zle -N rationalise-dot
 
-# force zsh to rehash
+# automatic rehash on command completion
 _force_rehash() {
   (( CURRENT == 1 )) && rehash
   return 1

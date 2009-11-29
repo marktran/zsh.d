@@ -9,11 +9,15 @@ function title {
     local value="${${${(V)1//\%/\%\%}//'\n'/; }//'\t'/ }"
     value="%70>...>$value%<<"
 
-    if [[ -z $SSH_TTY ]]; then
-        print -Pn "\e]0;$value $2\a"
-    else
-        print -Pn "\e]0;$value@$HOST $2\a"
-    fi
+    case $TERM in
+        xterm*)
+            if [[ -z $SSH_TTY ]]; then
+                print -Pn "\e]0;$value $2\a"
+            else
+                print -Pn "\e]0;$value@$HOST $2\a"
+            fi
+            ;;
+    esac
 }
 
 # chpwd is called when the current working directory is changed

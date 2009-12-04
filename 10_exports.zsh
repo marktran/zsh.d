@@ -13,4 +13,4 @@ export SSH_ENV=$HOME/.ssh/environment
 export UNAME=$(uname)
 
 [[ "$ORIGPATH" == "" ]] && export ORIGPATH=$PATH
-export PATH=$ORIGPATH:$HOME/bin
+export PATH=$ORIGPATH:$HOME/bin:/usr/local/bin

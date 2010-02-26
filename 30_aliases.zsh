@@ -3,6 +3,7 @@
 
 alias ^L=clear
 alias ack="$(whence ack-grep || whence ack) --nocolor"
+alias awk="$(whence gawk || whence awk)"
 alias ls="ls -F"
 alias m=mplayer
 alias rm="rm -i"

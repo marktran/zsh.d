@@ -10,6 +10,7 @@ rationalise-dot() {
     fi
 }
 zle -N rationalise-dot
+bindkey . rationalise-dot
 
 # automatic rehash on command completion
 _force_rehash() {

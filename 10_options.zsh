@@ -13,7 +13,7 @@ setopt AUTO_CD
 setopt AUTO_PUSHD
 setopt BRACE_CCL
 setopt EXTENDED_HISTORY
-setopt EXTENDED_GLOB
+# setopt EXTENDED_GLOB
 setopt HIST_IGNORE_ALL_DUPS
 setopt NOMATCH
 setopt NOTIFY

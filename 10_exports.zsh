@@ -5,6 +5,7 @@ export EMAIL='Mark Tran <mark@nirv.net>'
 export HOST=$(hostname)
 export HOST=${HOST%%.*}
 export LESSOPEN="|lesspipe.sh %s"
+export LSCOLORS="cxfxcxdxbxegedabagacad"
 export PAGER=less
 export PYTHONSTARTUP=$HOME/.pythonrc
 export READNULLCMD=cat

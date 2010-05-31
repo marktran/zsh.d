@@ -4,7 +4,6 @@
 alias ^L=clear
 alias ack="$(whence ack-grep || whence ack) --nocolor"
 alias awk="$(whence gawk || whence awk)"
-alias ls="ls -FG"
 alias m=mplayer
 alias rm="rm -i"
 alias sourcerc=". ~/.zsh/.zshrc"
@@ -23,3 +22,18 @@ alias mpr="mplayer -cache-min 4 \
 http://newsstream1.publicradio.org:80/"
 alias npr="mplayer -cache-min 4 \
 http://scfire-chi-aa01.stream.aol.com:80/stream/1062"
+
+# OS-specific settings
+function alias_BSD() {
+    alias ls="ls -FG"
+}
+
+function alias_GNU() {
+    alias ls="ls -F --color"
+}
+
+case $UNAME in
+    Darwin) alias_BSD ;;
+    FreeBSD) alias_BSD ;;
+    Linux) alias_GNU ;;
+esac

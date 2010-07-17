@@ -6,6 +6,7 @@ alias ack="$(whence ack-grep || whence ack) --nocolor"
 alias awk="$(whence gawk || whence awk)"
 alias m=mplayer
 alias rm="rm -i"
+alias sfv="cksfv -g *.sfv"
 alias sourcerc=". ~/.zsh/.zshrc"
 alias startx="startx 2>&1|tee ~/var/log/startx.log"
 alias xargs="$(whence gxargs || whence xargs)"

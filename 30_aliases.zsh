@@ -19,10 +19,11 @@ alias -g XR="| xargs -i unrar x {}"
 # radio streams
 alias bbc="mplayer -cache-min 4 -playlist \
 http://www.bbc.co.uk/worldservice/meta/tx/nb/live_news_au_nb.ram"
-alias mpr="mplayer -cache-min 4 \
-http://newsstream1.publicradio.org:80/"
-alias npr="mplayer -cache-min 4 \
-http://scfire-chi-aa01.stream.aol.com:80/stream/1062"
+alias kqed="mplayer -cache-min 4 \
+            http://kqed-ice.streamguys.org:80/kqedradio-ew-e1"
+alias ipr="mplayer -cache-min 4 http://voxsc1.somafm.com:8070"
+alias mpr="mplayer -cache-min 4 http://newsstream1.publicradio.org:80/"
+alias npr="mplayer -cache-min 4 http://npr.ic.llnwd.net/stream/npr_live24"
 
 # OS-specific settings
 function alias_BSD() {

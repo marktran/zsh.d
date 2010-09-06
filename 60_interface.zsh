@@ -1,4 +1,3 @@
-# -*- Mode: Shell-script; -*-
 # .zsh/60_interface : Mark Tran <mark@nirv.net>
 
 # prompt

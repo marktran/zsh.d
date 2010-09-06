@@ -1,4 +1,3 @@
-# -*- Mode: Shell-script; -*-
 # .zsh/40_completions : Mark Tran <mark@nirv.net>
 
 zmodload zsh/complist

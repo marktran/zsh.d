@@ -1,4 +1,3 @@
-# -*- Mode: Shell-script; -*-
 # .zsh/10_options : Mark Tran <mark@nirv.net>
 
 umask 022

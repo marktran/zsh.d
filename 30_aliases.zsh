@@ -1,4 +1,3 @@
-# -*- Mode: Shell-script; -*-
 # .zsh/30_aliases : Mark Tran <mark@nirv.net>
 
 alias ^L=clear

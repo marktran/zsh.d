@@ -1,4 +1,3 @@
-# -*- Mode: Shell-script; -*-
 # .zsh/50_modules : Mark Tran <mark@nirv.net>
 
 autoload -U url-quote-magic

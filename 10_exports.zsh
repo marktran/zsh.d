@@ -1,7 +1,6 @@
-# -*- Mode: Shell-script; -*-
 # .zsh/10_exports : Mark Tran <mark@nirv.net>
 
-export EMAIL='Mark Tran <mark@nirv.net>'
+export EMAIL='Mark Tran <mark.tran@gmail.com>'
 export HOST=$(hostname)
 export HOST=${HOST%%.*}
 export LESSOPEN="|lesspipe.sh %s"

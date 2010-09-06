@@ -1,4 +1,3 @@
-# -*- Mode: Shell-script; -*-
 # .zsh/20_functions : Mark Tran <mark@nirv.net>
 
 # complete notation for repeated dots

@@ -1,4 +1,4 @@
-# .zsh/10_options : Mark Tran <mark@nirv.net>
+# .zsh.d/10_options : Mark Tran <mark@nirv.net>
 
 umask 022
 

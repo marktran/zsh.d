@@ -1,4 +1,4 @@
-# .zsh/50_modules : Mark Tran <mark@nirv.net>
+# .zsh.d/50_modules : Mark Tran <mark@nirv.net>
 
 autoload -U url-quote-magic
 zle -N self-insert url-quote-magic

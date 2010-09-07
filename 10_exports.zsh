@@ -1,4 +1,4 @@
-# .zsh/10_exports : Mark Tran <mark@nirv.net>
+# .zsh.d/10_exports : Mark Tran <mark@nirv.net>
 
 export EMAIL='Mark Tran <mark.tran@gmail.com>'
 export HOST=$(hostname)

@@ -1,4 +1,4 @@
-# .zsh/20_functions : Mark Tran <mark@nirv.net>
+# .zsh.d/20_functions : Mark Tran <mark@nirv.net>
 
 # complete notation for repeated dots
 rationalise-dot() {

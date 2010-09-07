@@ -1,4 +1,4 @@
-# .zsh/40_completions : Mark Tran <mark@nirv.net>
+# .zsh.d/40_completions : Mark Tran <mark@nirv.net>
 
 zmodload zsh/complist
 autoload -U compinit && compinit
@@ -19,7 +19,7 @@ compctl -g '*.mp3 *.ogg *.mod *.wav *.avi *.mpg *.mpeg *.wmv' + -g '*(-/)' mplay
 
 # cache completions
 zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.zsh/cache
+zstyle ':completion:*' cache-path ~/.zsh.d/cache
 
 # fuzzy matching of completions
 zstyle ':completion:*' completer _complete _match _approximate

@@ -1,4 +1,4 @@
-# .zsh/60_interface : Mark Tran <mark@nirv.net>
+# .zsh.d/60_interface : Mark Tran <mark@nirv.net>
 
 # prompt
 zstyle ':vcs_info:*:prompt:*' formats '%b'

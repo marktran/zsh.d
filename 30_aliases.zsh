@@ -1,4 +1,4 @@
-# .zsh/30_aliases : Mark Tran <mark@nirv.net>
+# .zsh.d/30_aliases : Mark Tran <mark@nirv.net>
 
 alias ^L=clear
 alias ack="$(whence ack-grep || whence ack) --nocolor"
@@ -6,7 +6,7 @@ alias awk="$(whence gawk || whence awk)"
 alias m=mplayer
 alias rm="rm -i"
 alias sfv="cksfv -g *.sfv"
-alias sourcerc=". ~/.zsh/.zshrc"
+alias sourcerc=". ~/.zsh.d/.zshrc"
 alias startx="startx 2>&1|tee ~/var/log/startx.log"
 alias xargs="$(whence gxargs || whence xargs)"
 

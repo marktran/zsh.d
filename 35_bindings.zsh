@@ -1,3 +1,3 @@
-# .zsh.d/30_bindings : Mark Tran <mark@nirv.net>
+# .zsh.d/30_bindings.zsh : Mark Tran <mark@nirv.net>
 
 bindkey -e

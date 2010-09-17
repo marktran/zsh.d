@@ -1,4 +1,4 @@
-# .zsh.d/30_aliases : Mark Tran <mark@nirv.net>
+# .zsh.d/30_aliases.zsh : Mark Tran <mark@nirv.net>
 
 alias ^L=clear
 alias ack="$(whence ack-grep || whence ack) --nocolor"

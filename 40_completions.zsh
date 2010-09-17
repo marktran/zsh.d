@@ -1,4 +1,4 @@
-# .zsh.d/40_completions : Mark Tran <mark@nirv.net>
+# .zsh.d/40_completions.zsh : Mark Tran <mark@nirv.net>
 
 zmodload zsh/complist
 autoload -U compinit && compinit

@@ -11,6 +11,3 @@ export PYTHONSTARTUP=$HOME/.pythonrc
 export READNULLCMD=cat
 export SSH_ENV=$HOME/.ssh/environment
 export UNAME=$(uname)
-
-[[ "$ORIGPATH" == "" ]] && export ORIGPATH=$PATH
-export PATH=$HOME/bin:/usr/local/bin:$ORIGPATH

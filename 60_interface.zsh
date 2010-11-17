@@ -9,10 +9,10 @@ function title {
     value="%70>...>$value%<<"
 
     case $TERM in
-        # screen)
-        #     print -Pn "\ek${value}\e\\"
-        #     print -Pn "\e_${location}\e\\"
-        #     ;;
+        screen)
+            print -Pn "\ek${value}\e\\"
+            print -Pn "\e_${location}\e\\"
+            ;;
         xterm*)
             if [[ -z $SSH_TTY ]]; then
                 print -Pn "\e]0;$value $2\a"

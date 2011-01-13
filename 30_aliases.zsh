@@ -1,5 +1,6 @@
 # .zsh.d/30_aliases.zsh : Mark Tran <mark@nirv.net>
 
+ls --color -d . &>/dev/null 2>&1 && alias ls='ls -F --color' || alias ls='ls -FG'
 alias _='sudo'
 alias -- -='cd -'
 alias ^L='clear'

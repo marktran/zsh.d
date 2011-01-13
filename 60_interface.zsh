@@ -1,8 +1,12 @@
 # .zsh.d/60_interface.zsh : Mark Tran <mark@nirv.net>
 
-# prompt
-zstyle ':vcs_info:*:prompt:*' formats '%b'
-PS1='%m(%35<...<%~) %(1v.%1v%f.)%(?..!%?! )%# '
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git:*' formats ' %F{magenta}[%F{white}%b%F{magenta}]%c%u'
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr ' %F{blue}⚡'
+zstyle ':vcs_info:git:*' unstagedstr ' %F{blue}⚡'
+
+PS1='%F{red}%m%{$reset_color%} %F{magenta}%3~%{$reset_color%}${vcs_info_msg_0_}%{$reset_color%} %(1v.%1v%f.)'
 
 function title {
     local value="${${${(V)1//\%/\%\%}//'\n'/; }//'\t'/ }"
@@ -23,21 +27,6 @@ function title {
     esac
 }
 
-# chpwd is called when the current working directory is changed
-function chpwd {
-    ls
-}
-
-# precmd is called just before the prompt is printed
-function precmd {
-    psvar=()
-    vcs_info 'prompt'
-    [[ -n $vcs_info_msg_0_ ]] && psvar[1]="[${vcs_info_msg_0_}] "
-
-    title "zsh" "%~"
-}
-
-# preexec is called just before any command line is executed
-function preexec {
-    title "$1"
-}
+function chpwd { ls }
+function precmd { vcs_info; title "zsh" "%~" }
+function preexec { title "$1" }

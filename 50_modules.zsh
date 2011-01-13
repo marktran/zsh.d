@@ -1,5 +1,6 @@
 # .zsh.d/50_modules.zsh : Mark Tran <mark@nirv.net>
 
+autoload -U colors && colors
 autoload -U url-quote-magic
 zle -N self-insert url-quote-magic
 

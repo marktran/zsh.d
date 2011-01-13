@@ -6,6 +6,8 @@ zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:git:*' stagedstr ' %F{blue}⚡'
 zstyle ':vcs_info:git:*' unstagedstr ' %F{blue}⚡'
 
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
 PS1='%F{red}%m%{$reset_color%} %F{magenta}%3~%{$reset_color%}${vcs_info_msg_0_}%{$reset_color%} %(1v.%1v%f.)'
 
 function title {

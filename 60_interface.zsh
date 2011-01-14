@@ -1,14 +1,14 @@
 # .zsh.d/60_interface.zsh : Mark Tran <mark@nirv.net>
 
 zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:git:*' formats ' %F{magenta}[%F{white}%b%F{magenta}]%c%u'
+zstyle ':vcs_info:git:*' formats ' %F{magenta}[%f%b%F{magenta}]%c%u%f'
 zstyle ':vcs_info:git:*' check-for-changes true
-zstyle ':vcs_info:git:*' stagedstr ' %F{blue}⚡'
-zstyle ':vcs_info:git:*' unstagedstr ' %F{blue}⚡'
+zstyle ':vcs_info:git:*' stagedstr ' %F{blue}⚡%f'
+zstyle ':vcs_info:git:*' unstagedstr ' %F{blue}⚡%f'
 
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
-PS1='%F{red}%m%{$reset_color%} %F{magenta}%3~%{$reset_color%}${vcs_info_msg_0_}%{$reset_color%} %(1v.%1v%f.)'
+PS1='%F{red}%m%f %F{magenta}%3~%f${vcs_info_msg_0_}%f '
 
 function title {
     local value="${${${(V)1//\%/\%\%}//'\n'/; }//'\t'/ }"

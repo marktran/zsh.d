@@ -13,13 +13,13 @@ zle -N rationalise-dot
 bindkey . rationalise-dot
 
 # scrub the search otherwise rationalise-dot will kill the search
-function scrub-history-incremental-search-backward () {
-    bindkey "." self-insert
-    zle .history-incremental-search-backward
-    bindkey "." rationalise-dot
-}
-zle -N scrub-history-incremental-search-backward
-bindkey "^R" scrub-history-incremental-search-backward
+#function scrub-history-incremental-search-backward () {
+#    bindkey "." self-insert
+#    zle .history-incremental-search-backward
+#    bindkey "." rationalise-dot
+#}
+#zle -N scrub-history-incremental-search-backward
+bindkey "^R" history-incremental-pattern-search-backward
 
 # automatic rehash on command completion
 _force_rehash() {

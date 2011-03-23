@@ -8,6 +8,7 @@ alias a="$(whence ack-grep || whence ack) --nocolor"
 alias ack="$(whence ack-grep || whence ack) --nocolor"
 alias awk="$(whence gawk || whence awk)"
 alias d='dirs -v'
+alias c='calc'
 alias e='emacsclient -n'
 alias g='git'
 alias ga='git add'

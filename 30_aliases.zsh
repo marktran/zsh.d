@@ -34,7 +34,7 @@ alias sourcerc=". ~/.zsh.d/.zshrc"
 alias -g A="| ack"
 alias -g L="| less"
 alias -g X="| xargs"
-alias -g XR="| xargs unrar x"
+alias -g XR="| xargs -n1 unrar x"
 
 alias 1='cd -'
 alias 2='cd +2'

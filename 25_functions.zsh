@@ -1,25 +1,19 @@
-# .zsh.d/20_functions.zsh : Mark Tran <mark@nirv.net>
+# .zsh.d/25_functions.zsh : Mark Tran <mark@nirv.net>
 
-# complete notation for repeated dots
+# '...' => '../..' and so on...
 rationalise-dot() {
-       if [[ $KEYS = "." && $LBUFFER = *.. ]]; then
-      LBUFFER+=/..
-       else
-      zle .self-insert "$@"
-       fi
-    }
-zle -N self-insert rationalise-dot
+    local MATCH
+    if [[ $LBUFFER =~ '(^|/| |	|'$'\n''|\||;|&)\.\.$' ]]; then
+        LBUFFER+=/
+        zle self-insert
+        zle self-insert
+    else
+        zle self-insert
+    fi
+}
 zle -N rationalise-dot
 bindkey . rationalise-dot
-
-# scrub the search otherwise rationalise-dot will kill the search
-#function scrub-history-incremental-search-backward () {
-#    bindkey "." self-insert
-#    zle .history-incremental-search-backward
-#    bindkey "." rationalise-dot
-#}
-#zle -N scrub-history-incremental-search-backward
-bindkey "^R" history-incremental-pattern-search-backward
+bindkey -M isearch . self-insert 2>/dev/null
 
 # automatic rehash on command completion
 _force_rehash() {

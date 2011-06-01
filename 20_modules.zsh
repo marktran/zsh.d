@@ -1,4 +1,4 @@
-# .zsh.d/50_modules.zsh : Mark Tran <mark@nirv.net>
+# .zsh.d/20_modules.zsh : Mark Tran <mark@nirv.net>
 
 autoload -U colors && colors
 autoload -U edit-command-line

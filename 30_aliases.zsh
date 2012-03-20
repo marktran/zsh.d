@@ -4,12 +4,12 @@ ls --color -d . &>/dev/null 2>&1 && alias ls='ls -F --color' || alias ls='ls -FG
 alias _='sudo'
 alias -- -='cd -'
 alias ^L='clear'
-alias a="$(whence ack-grep || whence ack) --nocolor"
 alias ack="$(whence ack-grep || whence ack) --nocolor"
+alias ag='ag --nocolor'
 alias awk="$(whence gawk || whence awk)"
 alias d='dirs -v'
 alias c='calc -d'
-alias e='emacsclient -n'
+alias e='emacsclient -nw -c'
 alias g='git'
 alias ga='git add'
 alias gb='git branch'
@@ -19,7 +19,6 @@ alias gm='git merge'
 alias gr='git rebase'
 alias gs='git status --branch --short'
 alias history='history 0'
-alias j='jobs'
 alias l='ls -la'
 alias l.='ls -d .*'
 alias ll='ls -l'
@@ -28,13 +27,14 @@ alias pgrep='pgrep -L'
 alias pu='pushd'
 alias po='popd'
 alias rm='rm -i'
-alias sfv="cksfv -g *.sfv"
-alias sourcerc=". ~/.zsh.d/.zshrc"
+alias sfv='cksfv -g *.sfv'
+alias sourcerc='. ~/.zsh.d/.zshrc'
+alias v='vim'
 
-alias -g A="| ack"
-alias -g L="| less"
-alias -g X="| xargs"
-alias -g XR="| xargs -n1 unrar x"
+alias -g A='| ack'
+alias -g L='| less'
+alias -g X='| xargs'
+alias -g XR='| xargs -n1 unrar x'
 
 alias 1='cd -'
 alias 2='cd +2'
@@ -47,21 +47,21 @@ alias 8='cd +8'
 alias 9='cd +9'
 
 # radio streams
-alias bbc="mplayer -cache-min 4 -playlist \
-http://www.bbc.co.uk/worldservice/meta/tx/nb/live_news_au_nb.ram"
-alias kqed="mplayer -cache-min 4 \
-            http://kqed-ice.streamguys.org:80/kqedradio-ew-e1"
-alias ipr="mplayer -cache-min 4 http://voxsc1.somafm.com:8070"
-alias mpr="mplayer -cache-min 4 http://newsstream1.publicradio.org:80/"
-alias npr="mplayer -cache-min 4 http://npr.ic.llnwd.net/stream/npr_live24"
+alias bbc='mplayer -cache-min 4 -playlist \
+http://www.bbc.co.uk/worldservice/meta/tx/nb/live_news_au_nb.ram'
+alias kqed='mplayer -cache-min 4 \
+            http://kqed-ice.streamguys.org:80/kqedradio-ew-e1'
+alias ipr='mplayer -cache-min 4 http://voxsc1.somafm.com:8070'
+alias mpr='mplayer -cache-min 4 http://newsstream1.publicradio.org:80/'
+alias npr='mplayer -cache-min 4 http://npr.ic.llnwd.net/stream/npr_live24'
 
 # OS-specific settings
 function alias_BSD() {
-    alias ls="ls -FG"
+    alias ls='ls -FG'
 }
 
 function alias_GNU() {
-    alias ls="ls -F --color"
+    alias ls='ls -F --color'
 }
 
 case $UNAME in

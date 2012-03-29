@@ -14,3 +14,11 @@ export READNULLCMD='cat'
 export SSH_ENV="$HOME/.ssh/environment"
 export UNAME="$(uname)"
 export WORKON_HOME="$HOME/.virtualenvs"
+
+[[ "$ORIGPATH" == "" ]] && export ORIGPATH=$PATH
+export PATH="$HOME/bin:\
+/usr/local/bin:\
+/usr/local/sbin:\
+/opt/local/bin:\
+/opt/local/sbin:\
+$ORIGPATH"

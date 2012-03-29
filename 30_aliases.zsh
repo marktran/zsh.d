@@ -10,7 +10,6 @@ alias awk="$(whence gawk || whence awk)"
 alias d='dirs -v'
 alias c='calc -d'
 alias e='emacsclient -nw -c'
-alias g='git'
 alias ga='git add'
 alias gb='git branch'
 alias gc='git checkout'

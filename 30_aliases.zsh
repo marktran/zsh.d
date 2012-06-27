@@ -28,6 +28,7 @@ alias po='popd'
 alias rm='rm -i'
 alias sfv='cksfv -g *.sfv'
 alias sourcerc='. ~/.zsh.d/.zshrc'
+alias t='tree'
 alias v='vim'
 
 alias -g A='| ack'

@@ -1,5 +1,6 @@
 # .zsh.d/10_exports.zsh : Mark Tran <mark@nirv.net>
 
+export ALTERNATE_EDITOR=""
 export EMAIL='Mark Tran <mark.tran@gmail.com>'
 export HOST="$(hostname)"
 export HOST="${HOST%%.*}"

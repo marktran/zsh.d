@@ -2,4 +2,4 @@ cache/
 
 .zcalc_history
 .zcompdump
-*.local.zsh
+local.zsh

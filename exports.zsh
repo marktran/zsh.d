@@ -16,6 +16,7 @@ export SSH_ENV="$HOME/.ssh/environment"
 export UNAME="$(uname)"
 export WORKON_HOME="$HOME/.virtualenvs"
 
+fpath=(/usr/local/share/zsh-completions $fpath)
 [[ "$ORIGPATH" == "" ]] && export ORIGPATH=$PATH
 export PATH="$HOME/bin:\
 /usr/local/bin:\

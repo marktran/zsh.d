@@ -5,7 +5,7 @@ if [ -f `brew --prefix`/etc/autojump ]; then
 fi
 
 zmodload zsh/complist
-# autoload -U compinit && compinit
+autoload -U compinit && compinit
 
 compctl -K screen-sessions screen
 compctl -g '*(-/D)' cd

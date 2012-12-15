@@ -1,9 +1,5 @@
 # .zsh.d/35_completions.zsh : Mark Tran <mark@nirv.net>
 
-if [ -f `brew --prefix`/etc/autojump ]; then
-  . `brew --prefix`/etc/autojump
-fi
-
 zmodload zsh/complist
 autoload -U compinit && compinit
 

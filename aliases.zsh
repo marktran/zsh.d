@@ -33,9 +33,7 @@ alias t='tree'
 alias v='vim'
 
 alias -g A='| ack'
-alias -g L='| less'
 alias -g X='| xargs'
-alias -g XR='| xargs -n1 unrar x'
 
 alias 1='cd -'
 alias 2='cd +2'
@@ -55,18 +53,3 @@ alias kqed='mplayer -cache-min 4 \
 alias ipr='mplayer -cache-min 4 http://voxsc1.somafm.com:8070'
 alias mpr='mplayer -cache-min 4 http://newsstream1.publicradio.org:80/'
 alias npr='mplayer -cache-min 4 http://npr.ic.llnwd.net/stream/npr_live24'
-
-# OS-specific settings
-function alias_BSD() {
-    alias ls='ls -FG'
-}
-
-function alias_GNU() {
-    alias ls='ls -F --color'
-}
-
-case $UNAME in
-    Darwin) alias_BSD ;;
-    FreeBSD) alias_BSD ;;
-    Linux) alias_GNU ;;
-esac

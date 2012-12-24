@@ -1,5 +1,3 @@
-# .zsh.d/50_interface.zsh : Mark Tran <mark@nirv.net>
-
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:git:*' formats ' %F{magenta}[%f%b%F{magenta}]%c%u%f'
 zstyle ':vcs_info:git:*' check-for-changes true

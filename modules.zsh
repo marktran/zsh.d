@@ -1,5 +1,3 @@
-# .zsh.d/20_modules.zsh : Mark Tran <mark@nirv.net>
-
 autoload -U colors && colors
 autoload -U edit-command-line
 autoload -U url-quote-magic

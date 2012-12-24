@@ -1,5 +1,3 @@
-# .zsh.d/25_functions.zsh : Mark Tran <mark@nirv.net>
-
 # '...' => '../..' and so on...
 rationalise-dot() {
     local MATCH

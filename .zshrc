@@ -1,5 +1,4 @@
 # -*- Mode: Shell-script; -*-
-# .zsh.d/.zshrc : Mark Tran <mark@nirv.net>
 
 . $ZDOTDIR/exports.zsh
 . $ZDOTDIR/options.zsh

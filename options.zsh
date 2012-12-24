@@ -1,5 +1,3 @@
-# .zsh.d/15_options.zsh : Mark Tran <mark@nirv.net>
-
 umask 022
 
 HISTSIZE=4096

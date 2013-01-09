@@ -24,7 +24,6 @@ alias sfv='cksfv -g *.sfv'
 alias sniff='sudo ngrep -d "en0" -t "^(GET|POST) " "tcp and port 80"'
 alias reload!='. ~/.zsh.d/.zshrc'
 alias t='tree'
-alias v='vim'
 
 alias -g A='| ack'
 alias -g X='| xargs'

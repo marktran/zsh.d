@@ -2,6 +2,7 @@ export ALTERNATE_EDITOR=""
 export EMAIL='Mark Tran <mark.tran@gmail.com>'
 export HOST="$(hostname)"
 export HOST="${HOST%%.*}"
+export LESS='-R'
 export LS_COLORS='di=32:fi=0:ln=35:pi=5:so=5:bd=5:cd=5:or=31'
 export LSCOLORS="cxfxcxdxbxegedabagacad"
 export NODE_PATH='/usr/local/lib/node'
